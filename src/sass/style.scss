@@ -1,0 +1,175 @@
+$font-stack:    Helvetica, serif;
+
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
+$text-red-color: #b20000;
+
+body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+nav {
+    margin-top: 10px;
+    background-color: #ccc;
+}
+
+#content > .wrapper {
+    padding: 10px 0px 30px 0px;
+
+    h3 {
+        font-size: 18px;
+        @media screen and (min-width: $screen-sm-min) {
+            font-size: 22px;
+        }
+    }
+
+    #slide-show {
+        height: 220px;
+        background-color: #ff8000;
+        color: white;
+        line-height: 200px;
+        text-align: center;
+        font-size: 3em;
+
+        @media screen and (min-width: $screen-sm-min) {
+            height: 400px;
+            line-height: 400px;
+        }
+    }
+
+
+    #latest-talks-grid {
+        padding: 0px 15px 0px 15px;
+
+        .talk {
+
+            height: 160px;
+            padding: 5px 0px 5px 0px;
+
+            @media screen and (min-width: $screen-sm-min) {
+                padding: 10px 5px 0px 5px;
+                height: 490px;
+            }
+
+            img {
+                height: 100%;
+                width: auto;
+                // display: inline-block;
+                float: left;
+
+                @media screen and (min-width: $screen-sm-min) {
+                    float: none;
+                    height: auto;
+                    width: 100%;
+                }
+            }
+
+            .talk-speaker-description {
+
+                // display: inline-block;
+                float: left;
+                width: 50%;
+                padding-left: 20px;
+
+                @media screen and (min-width: $screen-sm-min) {
+                    float: none;
+                    width: auto;
+                    padding: 0px;
+                }
+
+
+                .talk-speaker-name {
+                    color: $text-red-color;
+                    margin-bottom: 3px;
+                    @media screen and (min-width: $screen-sm-min) {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .talk-tags {
+                    padding: 0px;
+                    margin-bottom: 3px;
+                    @media screen and (min-width: $screen-sm-min) {
+                        margin-bottom: 5px;
+                    }
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        font-size: 11px;
+                        @media screen and (min-width: $screen-sm-min) {
+                            font-size: 13px;
+                        }
+
+                        a {
+                            color: $text-red-color;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 11px;
+                    @media screen and (min-width: $screen-sm-min) {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .talk:nth-child(3n+1) {
+            @media screen and (min-width: $screen-sm-min) {
+                padding: 10px 10px 10px 0px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                padding: 10px 5px 0px 5px;
+            }
+        }
+
+        .talk:nth-child(3n) {
+            @media screen and (min-width: $screen-sm-min) {
+                padding: 10px 0px 10px 10px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                padding: 10px 5px 0px 5px;
+            }
+        }
+
+        
+        .talk:nth-child(4n+1) {
+            @media screen and (min-width: $screen-md-min) {
+                padding: 10px 10px 10px 0px;
+            }
+        }
+
+        .talk:nth-child(4n) {
+            @media screen and (min-width: $screen-md-min) {
+                padding: 10px 0px 10px 10px;
+            }
+        } 
+
+        .talk:nth-child(3n) {
+            // background-color: #ffcc66;
+        }
+
+        .talk:nth-child(3n+1) {
+            // background-color: #ff6666;
+        }
+
+        .talk:nth-child(3n+2) {
+            // background-color: #66ccff;
+        }
+    }
+
+    #btn-more-talks {
+        color: white;
+        background-color: #b20000 !important;
+    }
+}
+
+footer > .wrapper > p {
+    text-align: center;
+}

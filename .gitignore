@@ -1,0 +1,5 @@
+.sass-cache/
+
+# sublime text setting files
+*.sublime-project
+*.sublime-workspace
